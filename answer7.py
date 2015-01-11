@@ -12,6 +12,7 @@ def is_prime(numb):
 def next_prime(previous):
     next = previous
     while True:
+
         next += 1
         if is_prime(next):
             break
@@ -20,5 +21,6 @@ def next_prime(previous):
 prime = 1
 for i in range(1, 10002):
     prime = next_prime(prime)
+
 
 print(prime)
